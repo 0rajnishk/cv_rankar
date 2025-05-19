@@ -7,7 +7,7 @@ The project **"CV Ranker"** is designed to analyze resumes against job descripti
 [![Watch the demo](https://img.youtube.com/vi/wX5xuIKrJ4Q/0.jpg)](https://youtu.be/wX5xuIKrJ4Q)  
 **Click the image above to watch the full demo on YouTube**
 
-📁 You can also download or view the video directly from the repository:  
+You can also download or view the video directly from the repository:  
 [cv_rankar_demo.mp4](./cv_rankar_demo.mp4)
 
 
