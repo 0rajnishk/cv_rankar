@@ -16,8 +16,6 @@ import tempfile
 import sys
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 
-
-
 # Azure Blob Storage functions
 # Initialize Azure Blob Storage client
 def initialize_blob_client(connection_string):
@@ -279,24 +277,9 @@ def find_similar_resume(resume_embedding, faiss_index):
 
 
 # Streamlit App
-def main():
-    # Apply the fix for PyTorch/Streamlit issue
-    # try:
-    #     fix_streamlit_torch_issue()
-    # except Exception:
-    #     pass  # Continue even if the fix doesn't work
-    
-    # load_dotenv()
-    # api_key = os.getenv("GOOGLE_API_KEY")
+def main():    
+    load_dotenv()
 # ############################################################################################################
-# api_key = os.getenv("GOOGLE_API_KEY")
-
-# azure_openai_key = os.getenv("AZURE_OPENAI_API_KEY")
-# azure_openai_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
-# azure_openai_deployment = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME")
-
-# azure_blob_connection_string = os.getenv("AZURE_BLOB_CONNECTION_STRING")
-# container_name = os.getenv("AZURE_BLOB_CONTAINER_NAME", "cv-ranker-container")
     api_key = os.getenv("GOOGLE_API_KEY")
     # Get Azure OpenAI configuration
     azure_openai_key = os.getenv("AZURE_OPENAI_API_KEY")
