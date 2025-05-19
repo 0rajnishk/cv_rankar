@@ -14,7 +14,6 @@ import uuid
 from datetime import datetime
 import tempfile
 import sys
-from openai import AzureOpenAI
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 
 
@@ -287,10 +286,18 @@ def main():
     # except Exception:
     #     pass  # Continue even if the fix doesn't work
     
-    load_dotenv()
-    api_key = os.getenv("GOOGLE_API_KEY")
+    # load_dotenv()
+    # api_key = os.getenv("GOOGLE_API_KEY")
 # ############################################################################################################
-    
+# api_key = os.getenv("GOOGLE_API_KEY")
+
+# azure_openai_key = os.getenv("AZURE_OPENAI_API_KEY")
+# azure_openai_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
+# azure_openai_deployment = os.getenv("AZURE_OPENAI_DEPLOYMENT_NAME")
+
+# azure_blob_connection_string = os.getenv("AZURE_BLOB_CONNECTION_STRING")
+# container_name = os.getenv("AZURE_BLOB_CONTAINER_NAME", "cv-ranker-container")
+    api_key = os.getenv("GOOGLE_API_KEY")
     # Get Azure OpenAI configuration
     azure_openai_key = os.getenv("AZURE_OPENAI_API_KEY")
     azure_openai_endpoint = os.getenv("AZURE_OPENAI_ENDPOINT")
