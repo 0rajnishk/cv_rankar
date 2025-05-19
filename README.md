@@ -2,6 +2,15 @@
 
 The project **"CV Ranker"** is designed to analyze resumes against job descriptions using Azure services and various Python libraries. It leverages **Azure Blob Storage** for file handling and **Azure OpenAI** for text analysis. The application is **deployed on Azure App Services**, making it accessible as a web-based solution.
 
+### Demo Video
+
+[![Watch the demo](https://img.youtube.com/vi/wX5xuIKrJ4Q/0.jpg)](https://youtu.be/wX5xuIKrJ4Q)  
+**Click the image above to watch the full demo on YouTube**
+
+📁 You can also download or view the video directly from the repository:  
+[cv_rankar_demo.mp4](./cv_rankar_demo.mp4)
+
+
 #### Features
 
 * **Azure Blob Storage Integration**: Upload, download, list, and delete files using Azure Blob Storage.
